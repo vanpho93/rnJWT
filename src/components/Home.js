@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, AsyncStorage } from 'react-native';
 
 export default class Home extends Component {
+    // static navigationOptions = {
+    //     title: 'Home',
+    // }
+    componentDidMount() {
+        AsyncStorage.setItem('@token', 'asf');
+    }
     render() {
         return (
             <View 

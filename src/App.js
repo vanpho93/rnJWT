@@ -9,9 +9,9 @@ import SignInScreen from './components/SignIn';
 StatusBar.setHidden(true);
 
 const App = StackNavigator({
-    Home: { screen: HomeScreen },
+    HelloApp: { screen: HelloAppScreen },
     SignIn: { screen: SignInScreen },
-    HelloApp: { screen: HelloAppScreen }
+    Home: { screen: HomeScreen },
 }, {
     headerMode: 'none'
 });
